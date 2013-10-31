@@ -6,7 +6,7 @@
 ![pcb bottom](photo/ledm-pcb-bottom.jpg)
 
 ### hardware
-here is the [pcb](/hardware / led-matirx-pcb.zip) files.
+here is the [pcb](/hardware/led-matirx-pcb.zip) files.
 
 ### software
 software was lost, but here is a simple example to driver the matrix.
