@@ -13,10 +13,10 @@ software was lost, but here is a simple example to driver the matrix.
 
 ```
 char buf[8][27+1];
-buf[0][27] = 0x01;
-buf[1][27] = 0x02;
+buf[0][0] = 0x01;
+buf[1][0] = 0x02;
   ...
-buf[7][27] = 0x80;
+buf[7][0] = 0x80;
 
 for(i=0;;i++){
 
