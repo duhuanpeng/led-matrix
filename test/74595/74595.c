@@ -6,39 +6,88 @@ void writeb_74595(char ch) __naked
 __asm
 	push ACC
 	mov A, dpl
-
-	mov SDI, ACC.0
+#if 0
+	rlc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
-	mov SDI, ACC.1
+	rlc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+	
+	rlc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
-	mov SDI, ACC.2
+	rlc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+	
+	rlc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+	
+	rlc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+	
+	rlc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+	
+	rlc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+#else
+	rrc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
-	mov SDI, ACC.3
+	rrc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
-	mov SDI, ACC.4
+	rrc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
-	mov SDI, ACC.5
+	rrc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
-	mov SDI, ACC.6
+	rrc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
-	mov SDI, ACC.7
+	rrc A
+	mov SDI, C
 	setb SCK
 	clr SCK
 
+	rrc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+
+	rrc A
+	mov SDI, C
+	setb SCK
+	clr SCK
+
+#endif
 	pop ACC
 	ret
 __endasm;
