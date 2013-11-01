@@ -1,7 +1,7 @@
 ### overview
 ![top](photo/ledm-top.jpg)
 ![bottom](photo/ledm-bottom.jpg)
-![bare pcbs](photo/ledm-top.jpg)
+![bare pcbs](photo/ledm-pcbs.jpg)
 ![pcb top](photo/ledm-pcb-top.jpg)
 ![pcb bottom](photo/ledm-pcb-bottom.jpg)
 
@@ -65,7 +65,7 @@ void write27b_74595(char xdata *p)
 void main(void)
 {
 	xdata char buf[28*8]= 
-"\xfe ABCDEFGHIJKLMNOPQRSTUVWXY\0"
+"\xfe ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 "\xfd 11111111111111111111111111"
 "\xfb QWERTYUIOPASDFGHJKLZXCVBNM"
 "\xf7 22222222222222222222222222"
